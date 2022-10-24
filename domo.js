@@ -1,0 +1,16 @@
+var newDiv=document.createElement('div');
+newDiv.className='hello';
+newDiv.id='hello1';
+newDiv.setAttribute('title','Hello Div');
+var newDivText=document.createTextNode('Hello World');
+newDiv.appendChild(newDivText);
+var container=document.querySelector('header .container');
+var h1=document.querySelector('header h1');
+console.log(newDiv);
+newDiv.style.fontSize='30px';
+container.insertBefore(newDiv,h1);
+var parentnode=document.getElementById('items');
+//var newli=<li>Hello World</li>;
+//parentnode.appendFirstChild(newli);
+//parentnode.innerHTML='<li>item 1</li><li>item 2</li><li>item 3</li><li>item 4</li>';
+//parentnode.innerHTML='<li>Hello World</li>'+parentnode.innerHTML;
