@@ -66,7 +66,7 @@ itemlist.appendChild(li)
 
                 }
             }
-            itemlist.removeChild(li)
+            //itemlist.removeChild(li)
         }
     }
 }  
