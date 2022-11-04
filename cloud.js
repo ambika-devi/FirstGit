@@ -1,4 +1,4 @@
-var Form=document.getElementById('addform')
+var Form=document.getElementById('addmyform')
 var exp=document.getElementById('expence');
 var desc=document.getElementById('description');
 var cate=document.getElementById('category');
