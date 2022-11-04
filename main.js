@@ -1,20 +1,9 @@
-let form=document.getElementById('my-form');
+let form=document.getElementById('addform');
 let itemList=document.getElementById('users');
 let liTag;
 
 localStorage.setItem('ambikadevithota5@gmail.com','{"name":"Ambika","email":"ambikadevithota5@gmail.com"}');
 let li=document.createElement('li');
-li.style.backgroundColor='#c05e5e';
-li.style.color='white';
-li.appendChild(document.createTextNode('Ambika'));
-li.appendChild(document.createTextNode(" "));
-li.appendChild(document.createTextNode('ambikadevithota5@gmail.com'));
-delEdit(li);
-itemList.appendChild(li);
-
-
-
-
 //form submit event:
 form.addEventListener('submit',addItem);
 
@@ -40,12 +29,12 @@ function addItem(e){
         name,
         email
     };
-    localStorage.setItem(`${obj.email}`,JSON.stringify(obj));
+    axios.post("",obj)
+    .then((response)=> {
+        sho
+    })
     // creating of list of user.
     let li=document.createElement('li');
-    li.style.backgroundColor='#c05e5e';
-    li.style.color='white';
-
     li.appendChild(document.createTextNode(`${obj.name}`));
     li.appendChild(document.createTextNode(" "));
     li.appendChild(document.createTextNode(`${obj.email}`));
@@ -77,13 +66,6 @@ function removeItem(e){
         }
     }
 }
-
-
-
-
-
-
-
 //function for delete and edit button.
 function delEdit(li){
     let del=document.createElement('button');

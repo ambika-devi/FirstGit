@@ -38,10 +38,7 @@ edibtn.appendChild(document.createTextNode('Edit'));
 li.appendChild(edibtn)
 
 itemlist.appendChild(li)
-
-
     document.addEventListener('click',deleteitem);
-
     function deleteitem(e){
         if(e.target==delbtn){
             if(confirm('Are U sure?')){
@@ -66,7 +63,7 @@ itemlist.appendChild(li)
 
                 }
             }
-            //itemlist.removeChild(li)
+            itemlist.removeChild(li)
         }
     }
 }  
