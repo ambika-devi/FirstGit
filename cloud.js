@@ -98,7 +98,8 @@ function showonscreen(data){
                         Form.querySelector('#expence').value=response.data[i].expence
                         Form.querySelector('#description').value=response.data[i].description
                         Form.querySelector('#category').value=response.data[i].categorypro
-                        axios.delete(`${response.data[i]._id}`)
+                        axios.delete(`https://crudcrud.com/api/c8467e310b9c413d97b058c80079adbb/bookingappointment/
+                        ${response.data[i]._id}`)
                         .then()
                         .catch(err=>console.log(err))
                             }
